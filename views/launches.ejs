@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <title>Launches</title>
+</head>
+
+<body>
+    <div class="card">
+        <div class="card-content">
+            <div class="media">
+                <div class="media-left">
+                    <figure class="image is-48x48">
+                        <img src="<%= launches[0].links.patch.large %>" alt="Placeholder image">
+                    </figure>
+                </div>
+                <div class="media-content">
+                    <p class="title is-4">
+                        <%= launches[0].name %>
+                    </p>
+
+                </div>
+            </div>
+
+            <div class="content">
+                <p>
+                    Flight Number: <%= launches[0].flight_number %>
+                        <br>
+                        Details: <%= launches[0].details %>
+                            <br>
+                            Success: <%= launches[0].success %>
+                                <br>
+                </p>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-content">
+            <div class="media">
+                <div class="media-left">
+                    <figure class="image is-48x48">
+                        <img src="<%= launches[1].links.patch.large %>" alt="Placeholder image">
+                    </figure>
+                </div>
+                <div class="media-content">
+                    <p class="title is-4">
+                        <%= launches[1].name %>
+                    </p>
+
+                </div>
+            </div>
+
+            <div class="content">
+                <p>
+                    Flight Number: <%= launches[1].flight_number %>
+                        <br>
+                        Details: <%= launches[1].details %>
+                            <br>
+                            Success: <%= launches[1].success %>
+                                <br>
+                </p>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-content">
+            <div class="media">
+                <div class="media-left">
+                    <figure class="image is-48x48">
+                        <img src="<%= launches[2].links.patch.large %>" alt="Placeholder image">
+                    </figure>
+                </div>
+                <div class="media-content">
+                    <p class="title is-4">
+                        <%= launches[2].name %>
+                    </p>
+
+                </div>
+            </div>
+
+            <div class="content">
+                <p>
+                    Flight Number: <%= launches[2].flight_number %>
+                        <br>
+                        Details: <%= launches[2].details %>
+                            <br>
+                            Success: <%= launches[2].success %>
+                                <br>
+                </p>
+
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

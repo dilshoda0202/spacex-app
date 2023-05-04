@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <title>Landpads</title>
+</head>
+
+<body>
+    <div class="card">
+        <div class="card-content">
+            <div class="media">
+                <div class="media-left">
+                    <figure class="image is-48x48">
+                        <img src="<%= landpads[0].images.large %>" alt="Placeholder image">
+                    </figure>
+                </div>
+                <div class="media-content">
+                    <p class="title is-4">
+                        <%= landpads[0].name %>
+                    </p>
+
+                </div>
+            </div>
+
+            <div class="content">
+                <p>
+                    Full Name: <%= landpads[0].full_name %>
+                        <br>
+                        Status: <%= landpads[0].status %>
+                            <br>
+                            Type: <%= landpads[0].type %>
+                                <br>
+                                Locality: <%= landpads[0].locality %>
+                                    <br>
+                                    Region: <%= landpads[0].region %>
+                </p>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-content">
+            <div class="media">
+                <div class="media-left">
+                    <figure class="image is-48x48">
+                        <img src="<%= landpads[1].images.large %>" alt="Placeholder image">
+                    </figure>
+                </div>
+                <div class="media-content">
+                    <p class="title is-4">
+                        <%= landpads[1].name %>
+                    </p>
+
+                </div>
+            </div>
+
+            <div class="content">
+                <p>
+                    Full Name: <%= landpads[1].full_name %>
+                        <br>
+                        Status: <%= landpads[1].status %>
+                            <br>
+                            Type: <%= landpads[1].type %>
+                                <br>
+                                Locality: <%= landpads[1].locality %>
+                                    <br>
+                                    Region: <%= landpads[1].region %>
+                </p>
+
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

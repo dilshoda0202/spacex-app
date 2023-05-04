@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <title>Home Page</title>
+</head>
+<h1>Company Name: <%= company.name %>
+</h1>
+<p>Headquarters:
+    <%= company.headquarters.address %>
+        <br>
+        <%= company.headquarters.city %>
+            <br>
+            <%= company.headquarters.state %>
+</p>
+
+<body>
+    <div class="card">
+        <div class="card-content">
+            <p class="title">
+                Company Links
+            </p>
+            <p class="subtitle">
+                Connect with us:
+            </p>
+        </div>
+        <footer class="card-footer">
+            <p class="card-footer-item">
+                <span>
+                    View on <a href="<%= company.links.website %>">Our Website</a>
+                </span>
+            </p>
+            <p class="card-footer-item">
+                <span>
+                    View on <a href="<%= company.links.twitter %>">Twitter</a>
+                </span>
+            </p>
+            <p class="card-footer-item">
+                <span>
+                    View on <a href="<%= company.links.flickr %>">Flickr</a>
+                </span>
+            </p>
+            <p class="card-footer-item">
+                <span>
+                    View <a href="<%= company.links.elon_twitter %>">Elon's Twitter</a>
+                </span>
+            </p>
+        </footer>
+    </div>
+
+
+    <p> Founder:
+        <%= company.founder %>
+    </p>
+
+    <p>Founded:
+        <%= company.founded %>
+    </p>
+
+    <p>Employees:
+        <%= company.employees %>
+    </p>
+
+    <p>Vehicles:
+        <%= company.vehicles %>
+    </p>
+
+    <p>Launch Sites:
+        <%= company.launch_sites %>
+    </p>
+
+    <p>Test Sites:
+        <%= company.test_sites %>
+    </p>
+
+    <p>CEO:
+        <%= company.ceo %>
+    </p>
+
+    <p>CTO:
+        <%= company.cto %>
+    </p>
+
+    <p>COO:
+        <%= company.coo %>
+    </p>
+
+    <p>CTO Propulsion:
+        <%= company.cto_propulsion %>
+    </p>
+
+    <p>Valuation:
+        <%= company.valuation %>
+    </p>
+
+    <p>Summary:
+        <%= company.summary %>
+    </p>
+
+    <p>ID:
+        <%= company.id %>
+    </p>
+
+
+
+    <a href="capsules.ejs">Capsules</a>
+</body>
+
+</html>

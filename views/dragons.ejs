@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <title>Dragons</title>
+</head>
+
+<body>
+    <div class="card">
+        <div class="card-content">
+            <div class="media">
+                <div class="media-left">
+                    <figure class="image is-48x48">
+                        <img src="<%= dragons[0].flickr_images %>" alt="Placeholder image">
+                    </figure>
+                </div>
+                <div class="media-content">
+                    <p class="title is-4">
+                        <%= dragons[0].name %>
+                    </p>
+
+                </div>
+            </div>
+
+            <div class="content">
+                <p>
+                    Active: <%= dragons[0].active %>
+                        <br>
+                        Type: <%= dragons[0].type %>
+                            <br>
+                            First Flight: <%= dragons[0].first_flight %>
+                                <br>
+                                Description: <%= dragons[0].description %>
+
+                </p>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-content">
+            <div class="media">
+                <div class="media-left">
+                    <figure class="image is-48x48">
+                        <img src="<%= dragons[1].flickr_images %>" alt="Placeholder image">
+                    </figure>
+                </div>
+                <div class="media-content">
+                    <p class="title is-4">
+                        <%= dragons[1].name %>
+                    </p>
+
+                </div>
+            </div>
+
+            <div class="content">
+                <p>
+                    Active: <%= dragons[1].active %>
+                        <br>
+                        Type: <%= dragons[1].type %>
+                            <br>
+                            First Flight: <%= dragons[1].first_flight %>
+                                <br>
+                                Description: <%= dragons[1].description %>
+
+                </p>
+
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
